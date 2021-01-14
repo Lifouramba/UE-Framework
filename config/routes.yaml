@@ -8,10 +8,15 @@ client_prenom:
 
 ##page d'accueil site image
 home:
-    path: /img/home
+    path: /
     controller: App\Controller\ImageController::home
 
-##consulter les images
+##télécharger l'images
 affiche:
-    path: /img/data/{photo}
-    controller: App\Controller\ImageController::visite
+    path: /img/data/{image}
+    controller: App\Controller\ImageController::affiche
+
+##télécharger l'images
+affiches:
+    path: /img/datas/{image}
+    controller: App\Controller\ImageController::affiches

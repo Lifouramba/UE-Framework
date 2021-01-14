@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LoginController!{% endblock %}
+
+{% block body %}
+    {% for message in app.flashes('erreur_login') %}
+            {{ message }}
+    {% endfor %}
+    {{ form(infoForm) }}
+{% endblock %}
