@@ -22,8 +22,11 @@
     <list default="true" id="1570f365-0f8c-4173-a788-a3a09d508f4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FormulaireController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FormulaireController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/EmailVerifier.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/EmailVerifier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/SecurityAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/SecurityAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +181,8 @@
       <workItem from="1610298415510" duration="760000" />
       <workItem from="1610549784927" duration="8777000" />
       <workItem from="1610621089166" duration="6372000" />
-      <workItem from="1610699612107" duration="8018000" />
+      <workItem from="1610699612107" duration="10098000" />
+      <workItem from="1610710069321" duration="1762000" />
     </task>
     <servers />
   </component>
@@ -202,10 +206,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1610621332711" />
-    <state x="140" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610704621899">
+    <state x="140" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610710189597">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="140" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1610704621899" />
+    <state x="140" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1610710189597" />
     <state x="2130" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610561176511" />
     <state x="421" y="106" key="FileChooserDialogImpl" timestamp="1607286904932">
       <screen x="0" y="0" width="1280" height="680" />
