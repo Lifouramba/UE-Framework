@@ -20,7 +20,7 @@ class FormulaireController extends AbstractController
      * @param Request $request
      * @return Response
      */
-    public function login( Request $request)
+    public function login(  Request $request)
     {
 
                 $builder = $this->createFormBuilder();
@@ -58,6 +58,7 @@ class FormulaireController extends AbstractController
             $form ->handleRequest($request);
 
             if ($form->isSubmitted() && $form->isValid()){
+
                 return new Response("le formulaire est valide");
             }else{
                 $infoRendu = $form->createView();

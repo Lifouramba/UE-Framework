@@ -1,0 +1,77 @@
+
+
+{% block title %}{% endblock %}
+    {% block stylesheets %}
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="{{ asset('../../plugins/fontawesome-free/css/all.min.css')  }}">
+        <!-- icheck bootstrap -->
+        <link rel="stylesheet" href="{{ asset('../../plugins/icheck-bootstrap/icheck-bootstrap.min.css')  }}">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="{{ asset('../../dist/css/adminlte.min.css')  }}">{% endblock %}
+{% block body %}
+    <body class="hold-transition register-page">
+
+    <div class="col-md-4 mx-auto">
+
+        {% for flashError in app.flashes('verify_email_error') %}
+            <div class="alert alert-danger" role="alert">
+                {{ flashError }}
+            </div>
+        {% endfor %}
+
+        <h2 align="center">Bienvenu LIF||Formulaire</h2>
+        {{ form_start(registrationForm) }}
+
+        <div class="input-group mb-3">
+            {{ form_widget(registrationForm.email, {'attr': {'class': 'form-control'}}) }}
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-envelope"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            {{ form_widget(registrationForm.plainPassword.first, {'attr': {'class': 'form-control'}}) }}
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            {{ form_widget(registrationForm.plainPassword.second, {'attr': {'class': 'form-control'}}) }}
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="icheck-primary">
+            {{ form_row(registrationForm.agreeTerms) }}
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </div>
+        {{ form_end(registrationForm) }}
+
+
+        <strong>Built with <span class="text-danger">&hearts;</span> by <a href="https://">Lifouramba</a></strong>
+
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 3.1.0-Lif
+        </div>
+    </div>
+
+    <script src="{{ asset('../../plugins/jquery/jquery.min.js')  }}"></script>
+    <!-- Bootstrap 4 -->
+    <script src="{{ asset('../../plugins/bootstrap/js/bootstrap.bundle.min.js')  }}"></script>
+    <!-- AdminLTE App -->
+    <script src="{{ asset('../../dist/js/adminlte.min.js')  }}"></script>
+    </body>
+{% endblock %}

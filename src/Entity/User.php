@@ -23,7 +23,7 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      */
-    private $email = "Basphysebastien@gmail.com";
+    private $email;
 
     /**
      * @ORM\Column(type="json")
@@ -34,7 +34,7 @@ class User implements UserInterface
      * @var string The hashed password
      * @ORM\Column(type="string")
      */
-    private $password = "Basphy";
+    private $password;
 
     /**
      * @ORM\Column(type="boolean")
